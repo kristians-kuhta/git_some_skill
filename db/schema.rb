@@ -10,9 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2020_10_22_121745) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "repositories", force: :cascade do |t|
+    t.string "name", limit: 255, null: false
+    t.string "description", limit: 255
+    t.string "owner_login", limit: 255, null: false
+    t.boolean "private", default: false
+    t.string "html_url", limit: 2083, null: false
+    t.string "clone_url", limit: 255, null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["clone_url"], name: "index_repositories_on_clone_url"
+    t.index ["html_url"], name: "index_repositories_on_html_url"
+    t.index ["name"], name: "index_repositories_on_name"
+    t.index ["owner_login"], name: "index_repositories_on_owner_login"
+  end
 
 end
