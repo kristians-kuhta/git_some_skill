@@ -10,6 +10,9 @@ gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 
+# Database
+gem 'validates_lengths_from_database', '~> 0.8.0'
+
 group :development, :test do
   gem 'pry'
 end
