@@ -1,0 +1,57 @@
+---
+- owner_login: heartcombo
+  name: devise
+  description: Flexible authentication solution for Rails with Warden.
+  private: false
+  html_url: https://github.com/heartcombo/devise
+  clone_url: https://github.com/heartcombo/devise.git
+- owner_login: varvet
+  name: pundit
+  description: Minimal authorization through OO design and pure Ruby classes
+  private: false
+  html_url: https://github.com/varvet/pundit
+  clone_url: https://github.com/varvet/pundit.git
+- owner_login: rspec
+  name: rspec-rails
+  description: RSpec for Rails 5+
+  private: false
+  html_url: https://github.com/rspec/rspec-rails
+  clone_url: https://github.com/rspec/rspec-rails.git
+- owner_login: thoughtbot
+  name: factory_bot_rails
+  description: Factory Bot ♥ Rails
+  private: false
+  html_url: https://github.com/thoughtbot/factory_bot_rails
+  clone_url: https://github.com/thoughtbot/factory_bot_rails.git
+- owner_login: slim-template
+  name: slim-rails
+  description: Slim templates generator for Rails 3, 4 and 5
+  private: false
+  html_url: https://github.com/slim-template/slim-rails
+  clone_url: https://github.com/slim-template/slim-rails.git
+- owner_login: rubocop-hq
+  name: rubocop
+  description: A Ruby static code analyzer and formatter, based on the community Ruby
+    style guide.
+  private: false
+  html_url: https://github.com/rubocop-hq/rubocop
+  clone_url: https://github.com/rubocop-hq/rubocop.git
+- owner_login: aosabook
+  name: 500lines
+  description: 500 Lines or Less
+  private: false
+  html_url: https://github.com/aosabook/500lines
+  clone_url: https://github.com/aosabook/500lines.git
+- owner_login: remoteintech
+  name: remote-jobs
+  description: A list of semi to fully remote-friendly companies in tech.
+  private: false
+  html_url: https://github.com/remoteintech/remote-jobs
+  clone_url: https://github.com/remoteintech/remote-jobs.git
+- owner_login: simplecov-ruby
+  name: simplecov
+  description: Code coverage for Ruby with a powerful configuration library and automatic
+    merging of coverage across test suites
+  private: false
+  html_url: https://github.com/simplecov-ruby/simplecov
+  clone_url: https://github.com/simplecov-ruby/simplecov.git
