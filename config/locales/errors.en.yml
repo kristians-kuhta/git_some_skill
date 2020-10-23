@@ -1,0 +1,11 @@
+en:
+  activerecord:
+    errors:
+      models:
+        repository:
+          attributes:
+            name:
+              is_already_in_use: is already in use
+            clone_url:
+              not_an_url: must be an url
+              not_a_git_clone_url: must end with '.git'
