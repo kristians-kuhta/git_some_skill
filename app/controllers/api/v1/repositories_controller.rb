@@ -19,7 +19,7 @@ module Api
         repository = Repository.new(create_params)
 
         if repository.save
-          render json: RepositorySerializer.new(repository)
+          render status: :no_content
         else
           render json: RepositorySerializer.new(repository),
             status: :unprocessable_entity
@@ -30,7 +30,7 @@ module Api
         repository = Repository.new(create_params)
 
         if repository.save
-          render json: RepositorySerializer.new(repository)
+          render status: :no_content
         else
           render json: RepositorySerializer.new(repository),
             status: :unprocessable_entity
