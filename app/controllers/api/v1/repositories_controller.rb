@@ -27,9 +27,9 @@ module Api
       end
 
       def update
-        repository = Repository.new(create_params)
+        repository = Repository.find(params[:id])
 
-        if repository.save
+        if repository.update(update_params)
           render status: :no_content
         else
           render json: ErrorsSerializer.new(repository).serialized_json,
@@ -55,7 +55,10 @@ module Api
       end
 
       def update_params
-        create_params
+        params.
+          require(:data).
+          require(:attributes).
+          permit(:description, :private, :html_url, :clone_url)
       end
     end
   end
