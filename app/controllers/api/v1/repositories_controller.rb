@@ -21,7 +21,7 @@ module Api
         if repository.save
           render status: :no_content
         else
-          render json: RepositorySerializer.new(repository),
+          render json: ErrorsSerializer.new(repository).serialized_json,
             status: :unprocessable_entity
         end
       end
@@ -32,7 +32,7 @@ module Api
         if repository.save
           render status: :no_content
         else
-          render json: RepositorySerializer.new(repository),
+          render json: ErrorsSerializer.new(repository).serialized_json,
             status: :unprocessable_entity
         end
       end
