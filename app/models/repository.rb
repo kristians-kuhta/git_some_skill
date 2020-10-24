@@ -18,8 +18,13 @@ class Repository < ApplicationRecord
   private
 
   def full_name_uniqueness
-    return unless Repository.where(owner_login: owner_login, name: name).exists?
+    repositories_exist = Repository.
+      where.
+      not(id: id).
+      where(owner_login: owner_login, name: name).
+      exists?
+    return unless repositories_exist
 
-    errors.add(:name, :already_exists_for_owner)
+    errors.add(:name, :is_already_in_use)
   end
 end
